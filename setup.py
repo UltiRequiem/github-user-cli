@@ -1,9 +1,9 @@
 from setuptools import setup
 from distutils.core import setup
-from githubapi.version import __version__
+from githubapi2.version import __version__
 
 setup(
-    name="githubapi",
+    name="githubapi2",
     version=__version__,
     python_requires=">=3.6",
     description="A wrapper for the GitHub Api.",
@@ -11,11 +11,11 @@ setup(
     long_description_content_type="text/markdown",
     author="UltiRequiem",
     author_email="eliaz.bobadilladev@gmail.com",
-    url="https://github.com/UltiRequiem/githubapi",
+    url="https://github.com/UltiRequiem/githubapi2",
     license="MIT",
-    packages=["githubapi"],
+    packages=["githubapi2"],
     install_requires=["requests==2.25.1"],
-    entry_points={"console_scripts": ["githubapi = githubapi.githubapi:main"]},
+    entry_points={"console_scripts": ["githubapi = githubapi2.githubapi2:main"]},
     classifiers=[
         "Programming Language :: Python",
     ],
