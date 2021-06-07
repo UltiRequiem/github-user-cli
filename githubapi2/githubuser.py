@@ -32,7 +32,13 @@ def get_important_data(user_details):
 
 
 def print_user_data(data):
-    print(f"{data['name']}(@{data['username']}): {data['bio']}")
+    print(f"{data['name']}: {data['bio']}")
+    print(
+        f"Location: {data['location']} | Twitter Username: {data['twitter_username']} | Web Page: https://{data['webpage']}"
+    )
+    print(
+        f"Total Public Repositories: {data['total_public_repos']} | Total Public Gists {data['total_public_gists']} | Total Followers: {data['total_followers']} | Total Following: {data['total_following']}"
+    )
 
 
 def run():

@@ -15,7 +15,7 @@ setup(
     license="MIT",
     packages=["githubapi2"],
     install_requires=["requests==2.25.1"],
-    entry_points={"console_scripts": ["github_user = githubapi2.githubuser:run"]},
+    entry_points={"console_scripts": ["ghuser = githubapi2.githubuser:run"]},
     classifiers=[
         "Programming Language :: Python",
     ],
