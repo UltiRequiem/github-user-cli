@@ -1,13 +1,14 @@
 import sys
 import requests
 
+GITHUB_API = "https://api.github.com"
 
 def get_username():
     return str(input("Username: "))
 
 
 def get_user_details(username):
-    return requests.get(f"https://api.github.com/users/{username}").json()
+    return requests.get(f"{GITHUB_API}/users/{username}").json()
 
 
 def print_data(user_details):
