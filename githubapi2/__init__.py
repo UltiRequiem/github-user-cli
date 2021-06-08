@@ -1,1 +1,3 @@
-# This file tells Python that this is a submodule
+"""
+This file tells Python that this is a submodule
+"""
